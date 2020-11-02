@@ -1,38 +1,70 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(156, 168, 186, 0.2);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 775px) {
+  .profile {
+    display: inline-flex;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 705px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+input:focus {
+  outline: auto 1px;
+  outline-color: blue;
+  outline-style: auto;
+  outline-width: 1px;
+}
+
+input:-webkit-focus {
+  outline: auto 1px;
+  outline-color: blue;
+  outline-style: auto;
+  outline-width: 1px;
+}
+
+input:-moz-focus {
+  outline: auto 1px;
+  outline-color: blue;
+  outline-style: auto;
+  outline-width: 1px;
+}
+
+input:focus {
+  outline: auto 1px;
+  outline-color: blue;
+  outline-style: auto;
+  outline-width: 1px;
+}
+
+input:-webkit-focus {
+  outline: auto 1px;
+  outline-color: blue;
+  outline-style: auto;
+  outline-width: 1px;
+}
+
+input:-moz-focus {
+  outline: auto 1px;
+  outline-color: blue;
+  outline-style: auto;
+  outline-width: 1px;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+  outline-color: blue;
+  outline-style: auto;
+  outline-width: 1px;
 }
